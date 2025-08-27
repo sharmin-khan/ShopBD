@@ -4,29 +4,26 @@ import React from 'react';
 const About = () => {
   const projects = [
     {
-      title: 'Friend Assign',
-      description: 'Website Theme⭐ Online Group-Study assignment In this assignment, you will build a web application for online group study with friends (Every registered user is a friend of others). Users can create assignments, complete them, and grade their friends assignments.',
-      github: 'https://github.com/Mostakim69/FriendAssign',
-      demo: 'https://assignmen-11-app.web.app/',
+      title: 'PropEase',
+      description: "PropEase is your all-in-one platform for buying, selling, and renting properties. It simplifies the entire real estate process with an intuitive interface, smart search tools, and secure transactions, making property management effortless for everyone.",
+      demo: 'https://real-estate-platform-4dacc.web.app',
     },
     {
-      title: 'Hobby Hub',
-      description: "HobbyHub is a platform where people can discover and join local hobby-based groups (e.g., book clubs, hiking crews, painting circles) or create their own. It encourages social engagement through shared interests, helping people build communities around their passions.",
-      github: 'https://github.com/Mostakim69/HobbyHub',
-      demo: 'https://happy-family-4d585.web.app/',
+      title: 'TaskNest',
+      description: "TaskNest is a smart freelance task marketplace that connects clients with skilled freelancers. It simplifies project management with seamless task posting, bidding, and secure payments, ensuring efficient collaboration and successful project completion for everyone.",
+      demo: 'https://freelance-task-marketpla-73040.web.app',
     },
     {
-      title: 'Health Care',
-      description: "🏥 Medical Appointment Booking Application Build A React-based web application for scheduling and managing doctor appointments. The application includes multiple pages, data persistence, interactive UI elements, routing, and visual representation using charts.",
-      github: 'https://github.com/Mostakim69/HealthCare',
-      demo: 'https://peaceful-sunflower-7c0320.netlify.app/',
+      title: 'MarathonPro',
+      description: "Marathon Pro is a comprehensive platform for runners and event organizers. It streamlines marathon management with easy registration, real-time tracking, and performance analytics, helping athletes achieve their goals while making event organization efficient and seamless.",
+      demo: 'https://marathon-management-syst-3a566.web.app',
     },
   ];
 
   const contactInfo = [
-    { label: 'Location', value: 'Rajshahi, Bangladesh' },
-    { label: 'Phone', value: '+8801821023369' },
-    { label: 'Email', value: 'mdmostakimhosen35@gmail.com' },
+    { label: 'Location', value: 'Dhaka, Bangladesh' },
+    { label: 'Phone', value: '+8801885676543' },
+    { label: 'Email', value: 'sarminkhan@gmail.com' },
   ];
 
   return (
@@ -65,15 +62,7 @@ const About = () => {
             </h4>
             <p className="text-gray-700 mb-4 leading-relaxed">{project.description}</p>
             <div className="flex justify-center gap-4">
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline font-medium"
-              >
-                GitHub
-              </a>
-              <span>|</span>
+    
               <a
                 href={project.demo}
                 target="_blank"
