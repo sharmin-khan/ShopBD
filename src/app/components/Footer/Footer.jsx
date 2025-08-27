@@ -2,107 +2,67 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="w-full relative bg-black">
-      {/* Background with top glow */}
+    <div className="w-full relative bg-black text-gray-300">
+      {/* Background with subtle glow */}
       <div
         className="absolute inset-0 z-0"
         style={{
           background:
-            "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(99, 102, 241, 0.25), transparent 70%), #000000",
+            "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(99, 102, 241, 0.15), transparent 70%), #000000",
         }}
       />
 
       {/* Footer Content */}
-      <footer className="relative z-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 footer text-neutral-content  p-10 mx-auto max-w-11/12">
-        <nav>
-          <h6 className="footer-title">Services</h6>
-          <Link href="/services/branding" className="link link-hover">
-            Branding
+      <footer className="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-10 mx-auto max-w-7xl">
+        {/* Logo Section */}
+        <div className="mb-6 sm:mb-0">
+          <Link href="/" className="text-2xl font-bold text-cyan-400 hover:text-cyan-300 transition-colors">
+            Shop<span className="text-indigo-400">BD</span>
           </Link>
-          <Link href="/services/design" className="link link-hover">
-            Design
+          <p className="mt-2 text-gray-400 text-sm">
+            Your one-stop shop for all your needs. Quality products, great prices.
+          </p>
+        </div>
+
+        {/* Quick Links */}
+        <div>
+          <h6 className="font-semibold text-white mb-3">Quick Links</h6>
+           <Link href="/features" className="block hover:text-cyan-400 transition-colors">
+            Home
           </Link>
-          <Link href="/services/marketing" className="link link-hover">
-            Marketing
+          <Link href="/about" className="block hover:text-cyan-400 transition-colors">
+            About
           </Link>
-          <Link href="/services/advertisement" className="link link-hover">
-            Advertisement
+          <Link href="/contact" className="block hover:text-cyan-400 transition-colors">
+            My Bookings
           </Link>
-        </nav>
-        <nav>
-          <h6 className="footer-title">Company</h6>
-          <Link href="/about" className="link link-hover">
-            About us
+          <Link href="/pricing" className="block hover:text-cyan-400 transition-colors">
+          Blogs
           </Link>
-          <Link href="/contact" className="link link-hover">
-            Contact
-          </Link>
-          <Link href="/jobs" className="link link-hover">
-            Jobs
-          </Link>
-          <Link href="/press" className="link link-hover">
-            Press kit
-          </Link>
-        </nav>
-        <nav>
-          <h6 className="footer-title">Legal</h6>
-          <Link href="/terms" className="link link-hover">
-            Terms of use
-          </Link>
-          <Link href="/privacy" className="link link-hover">
-            Privacy policy
-          </Link>
-          <Link href="/cookies" className="link link-hover">
-            Cookie policy
-          </Link>
-        </nav>
-        <nav>
-          <h6 className="footer-title">Social</h6>
-          <Link
-            href="https://twitter.com"
-            target="_blank"
-            className="link link-hover"
-          >
+        </div>
+
+        {/* Social Links */}
+        <div>
+          <h6 className="font-semibold text-white mb-3">Social</h6>
+          <Link href="https://twitter.com" target="_blank" className="block hover:text-cyan-400 transition-colors">
             Twitter
           </Link>
-          <Link
-            href="https://instagram.com"
-            target="_blank"
-            className="link link-hover"
-          >
-            Instagram
-          </Link>
-          <Link
-            href="https://facebook.com"
-            target="_blank"
-            className="link link-hover"
-          >
-            Facebook
-          </Link>
-          <Link
-            href="https://github.com"
-            target="_blank"
-            className="link link-hover"
-          >
+          <Link href="https://github.com" target="_blank" className="block hover:text-cyan-400 transition-colors">
             GitHub
           </Link>
-        </nav>
-        <nav>
-          <h6 className="footer-title">Explore</h6>
-          <Link href="/features" className="link link-hover">
-            Features
+          <Link href="https://facebook.com" target="_blank" className="block hover:text-cyan-400 transition-colors">
+            Facebook
           </Link>
-          <Link href="/enterprise" className="link link-hover">
-            Enterprise
+          <Link href="https://instagram.com" target="_blank" className="block hover:text-cyan-400 transition-colors">
+            Instagram
           </Link>
-          <Link href="/security" className="link link-hover">
-            Security
-          </Link>
-          <Link href="/pricing" className="link link-hover">
-            Pricing
-          </Link>
-        </nav>
+        </div>
       </footer>
+
+      {/* Bottom Note */}
+      <div className="relative z-10 text-center text-sm text-gray-500 pb-4 pt-4 border-t border-gray-800">
+        © {new Date().getFullYear()} ShopBD. All rights reserved.
+      </div>
     </div>
   );
 };
