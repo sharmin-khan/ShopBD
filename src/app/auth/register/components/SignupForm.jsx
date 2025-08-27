@@ -48,7 +48,7 @@ export default function SignupForm() {
             name="username"
             placeholder="Enter your name"
             required
-            className="input input-bordered w-full mt-1"
+            className="input text-black input-bordered w-full mt-1"
           />
         </div>
 
@@ -59,7 +59,7 @@ export default function SignupForm() {
             name="email"
             placeholder="Enter your email"
             required
-            className="input input-bordered w-full mt-1"
+            className="input text-black input-bordered w-full mt-1"
           />
         </div>
 
@@ -70,7 +70,7 @@ export default function SignupForm() {
             name="password"
             placeholder="Enter your password"
             required
-            className="input input-bordered w-full mt-1"
+            className="input text-black input-bordered w-full mt-1"
           />
         </div>
 
