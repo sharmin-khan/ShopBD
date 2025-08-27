@@ -8,18 +8,18 @@ import { Autoplay } from "swiper/modules";
 
 export default function HeroSection() {
   return (
-    <section className="relative text-center rounded-3xl shadow-lg shadow-indigo-900/40 overflow-hidden">
+    <section className="relative my-12 text-center rounded-3xl shadow-lg shadow-indigo-900/40 overflow-hidden">
       {/* Swiper Slider */}
       <Swiper
         modules={[Autoplay]}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop={true}
-        className="h-[600px] w-full"
+        className="h-[500px] w-full"
       >
         {/* Slide 1 */}
         {/* Slide 1 */}
         <SwiperSlide>
-          <div className="h-full w-full flex flex-col justify-center items-center bg-[url('https://i.postimg.cc/Pq8BxVVD/1ce011cfd3b4140cbe8932c65d55157c.jpg')] bg-cover bg-center">
+          <div className="h-full w-full flex flex-col justify-center items-center bg-[url('https://i.ibb.co.com/MD5H9Wxg/shop.jpg')] bg-cover bg-center">
             <div className="bg-black/50 p-6 rounded-2xl">
               <h1 className="text-5xl md:text-6xl font-extrabold text-white drop-shadow-lg">
                 Experience Pure Sound 🎧
@@ -57,7 +57,7 @@ export default function HeroSection() {
 
         {/* Slide 3 */}
         <SwiperSlide>
-          <div className="h-full w-full flex flex-col justify-center items-center bg-[url('https://i.postimg.cc/CMq9ZRv9/261c79c1a9df516623ebf22e8591472b.jpg')] bg-cover bg-center">
+          <div className="h-full w-full flex flex-col justify-center items-center bg-[url('https://i.ibb.co.com/jPpwVD3P/patrick.jpg')] bg-cover bg-center">
             <div className="bg-black/50 p-6 rounded-2xl">
               <h1 className="text-5xl md:text-6xl font-extrabold text-white drop-shadow-lg">
                 Power Meets Elegance 💻
