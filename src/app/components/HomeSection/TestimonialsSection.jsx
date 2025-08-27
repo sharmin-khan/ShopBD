@@ -1,17 +1,17 @@
 export default function TestimonialsSection() {
   const testimonials = [
     {
-      name: "Rafiq H.",
+      name: "Saidul H.",
       review:
         "Quick and reliable. They rescued me at midnight when my car broke down!",
     },
     {
-      name: "Nusrat A.",
+      name: "Shima A.",
       review:
         "Affordable and trustworthy. My car always runs smooth after service.",
     },
     {
-      name: "Tanvir K.",
+      name: "Razu K.",
       review: "Professional staff, modern garage, and great support.",
     },
   ];
