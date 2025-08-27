@@ -40,14 +40,14 @@ const About = () => {
         aria-labelledby="developer-name"
       >
         <img
-          src="https://i.postimg.cc/sXC5qv36/IMG-20241224-232711.jpg"
-          alt="Md Mostakim Hosen"
+          src="https://i.ibb.co.com/q3SyTLH0/girl.jpg"
+          alt="Sarmin Akter"
           className="rounded-full w-40 h-40 object-cover mb-6 border-4 border-amber-100"
         />
         <h3 id="developer-name" className="text-2xl font-semibold text-gray-800 text-center">
-          Md Mostakim Hosen
+          Sarmin Akter
         </h3>
-        <p className="text-gray-600 text-center mb-4">MERN-stack Web Developer</p>
+        <p className="text-gray-600 text-center mb-4">Frontend Developer</p>
         <p className="text-gray-700 text-center leading-relaxed">
           I build responsive web applications using the MERN stack, Firebase, and modern UI. I love creating user-friendly interfaces and seamless experiences. My goal is to make the web a better place, one project at a time.
         </p>

@@ -35,7 +35,7 @@ const Navbar = () => {
             href="/"
             className="flex items-center text-2xl font-bold text-cyan-400 hover:text-cyan-300 transition-colors"
           >
-            Shopper
+            Shop<span className="text-indigo-400">BD</span>
             </Link>
 
           {/* Desktop Menu */}
